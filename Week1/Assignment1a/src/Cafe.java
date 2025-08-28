@@ -22,7 +22,7 @@ public class Cafe {
     // Method to display menu
     public void displayMenu() {
         System.out.println("|| Menu ||");
-        if (menuItem1 != null) menuItem1.displayItemInfo();
+        if (menuItem1 != null) menuItem1.displayItemInfo(); // check if empty
         if (menuItem2 != null) menuItem2.displayItemInfo();
         if (menuItem3 != null) menuItem3.displayItemInfo();
     }

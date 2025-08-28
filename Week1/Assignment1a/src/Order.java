@@ -17,7 +17,7 @@ public class Order {
     public void calculateTotal() {
         totalAmount = 0;
 
-        if (item1 != null) totalAmount += item1.getPrice();
+        if (item1 != null) totalAmount += item1.getPrice(); // check if empty
         if (item2 != null) totalAmount += item2.getPrice();
         if (item3 != null) totalAmount += item3.getPrice();
     }
@@ -26,7 +26,7 @@ public class Order {
     public void displayOrderDetails() {
         System.out.println("|| Order ||");
 
-        if (item1 != null) item1.displayItemInfo();
+        if (item1 != null) item1.displayItemInfo(); // check if empty
         if (item2 != null) item2.displayItemInfo();
         if (item3 != null) item3.displayItemInfo();
 
